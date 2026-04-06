@@ -33,10 +33,11 @@ Sistem menggunakan arsitektur berbasis cloud dengan alur:
 
 Penjelasan:
 - User mengakses aplikasi melalui browser
-- Request diproses oleh EC2 (backend server)
-- Data disimpan di RDS
-- File/gambar disimpan di S3
-- CloudFront digunakan untuk mempercepat akses
+- CloudFront berfungsi sebagai CDN untuk mempercepat akses
+- Load Balancer mendistribusikan request ke server EC2
+- EC2 menjalankan backend aplikasi
+- RDS menyimpan data utama sistem
+- S3 digunakan untuk penyimpanan file (gambar, dll)
 
 ---
 
