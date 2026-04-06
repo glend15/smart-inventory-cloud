@@ -29,8 +29,7 @@ Aplikasi ini dibangun dengan memanfaatkan layanan cloud untuk memastikan sistem 
 ## Arsitektur Sistem
 Sistem menggunakan arsitektur berbasis cloud dengan alur:
 
-User → CloudFront → EC2 → RDS  
-            ↘ S3
+![Arsitektur Sistem](docs/arsitektur.jpeg)
 
 Penjelasan:
 - User mengakses aplikasi melalui browser
