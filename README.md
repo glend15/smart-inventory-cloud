@@ -29,7 +29,7 @@ Aplikasi ini dibangun menggunakan layanan Microsoft Azure untuk memastikan siste
 ## Arsitektur Sistem
 Sistem menggunakan arsitektur berbasis cloud pada Microsoft Azure dengan alur sebagai berikut:
 
-![Arsitektur Sistem](docs/architecture.png)
+![Arsitektur Sistem](docs/Architecture.png)
 
 Penjelasan:
 - User mengakses aplikasi melalui browser  
