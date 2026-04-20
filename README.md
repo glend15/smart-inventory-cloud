@@ -57,10 +57,10 @@ Penjelasan:
 ## Struktur Project
 
 smart-inventory-cloud/
-├── backend/                # Backend API (Node.js / Express)
-├── frontend/               # Frontend (UI)
-├── docs/                   # Dokumentasi & diagram
-├── infra/terraform/        # Infrastructure as Code (Azure)
+├── backend/                
+├── frontend/               
+├── docs/                   
+├── infra/terraform/        
 ├── README.md
 └── .gitignore
 
