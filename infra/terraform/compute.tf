@@ -3,6 +3,7 @@ resource "azurerm_public_ip" "public_ip" {
   location            = data.azurerm_resource_group.rg.location
   resource_group_name = data.azurerm_resource_group.rg.name
   allocation_method   = "Static"
+  sku                 = "Standard"
 
   tags = {
     Project     = "InventoryCloudProject"
@@ -39,7 +40,7 @@ resource "azurerm_linux_virtual_machine" "vm" {
   name                = "inventory-vm-1"
   resource_group_name = data.azurerm_resource_group.rg.name
   location            = data.azurerm_resource_group.rg.location
-  size                = "Standard_B1s"
+  size                = "Standard_Ds1_v2"
   admin_username      = var.admin_username
 
   network_interface_ids = [
@@ -48,7 +49,7 @@ resource "azurerm_linux_virtual_machine" "vm" {
 
   admin_ssh_key {
     username   = var.admin_username
-    public_key = file("~/.ssh/id_rsa.pub")
+    public_key = file("C:/Users/ASUS/.ssh/id_rsa.pub")
   }
 
   os_disk {
