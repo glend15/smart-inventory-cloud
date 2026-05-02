@@ -1,10 +1,18 @@
+require('./config/appInsights');
+
 const express = require('express');
 const app = express();
 
-const routes = require('./routes/index');
+const logger = require('./config/logger');
+app.use(logger);
 
 app.use(express.json());
+
+const routes = require('./routes/index');
 app.use('/', routes);
+
+const testRoutes = require('./routes/test');
+app.use('/', testRoutes);
 
 const PORT = 3000;
 
