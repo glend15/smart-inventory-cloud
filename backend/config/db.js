@@ -3,7 +3,7 @@ const mysql = require('mysql2');
 const connection = mysql.createConnection({
     host: 'mysql-inventory-kelompok2.mysql.database.azure.com',
     user: 'dbadmin',
-    password: '',
+    password: 'ISI_PASSWORD_KALIAN',
     database: 'smart_inventory'
 });
 
